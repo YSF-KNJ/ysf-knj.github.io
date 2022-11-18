@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head profile="http://www.w3.org/2005/10/profile">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>BS ONE</title>
+
+  <!-- Bootstrap core CSS-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+  <link href="site.all.css" rel="stylesheet">
+</head>
+<body>
+	<br/>
+    <h4 align = "center">BS ONE CHANNEL</h4>
+    <table class="table table-hover responsiveTable" id="example1">
+      <thead>
+        <tr>
+          <th>Video Title</th>
+          <th>Ref</th>
+		  <th>Date</th>
+          <th>Duration</th>
+          <th>Source File</th>
+          <th>Paid</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>واش غيقبلو البنات مواعدة شاب معاق</td>
+          <td>x1tCCzfdRrU</td>
+		  <th>11/11/2022</th>
+          <td>10:22</td>
+          <td><a href="Files/x1tCCzfdRrU.srt" target="_blank" download>x1tCCzfdRrU.srt</a></td>
+          <td><i class="fas fa-check active"></i></td>
+        </tr>
+        <tr>
+          <td>None</td>
+          <td>None</td>
+		  <th>11/18/2022</th>
+          <td>None</td>
+          <td>None</td>
+          <td><i class="fas fa-check active"></i></td>
+        </tr>
+		<tr>
+          <td>None</td>
+          <td>None</td>
+		  <td>None</td>
+          <td>None</td>
+          <td>None</td>
+          <td><i class="fas fa-times inactive"></i></td>
+        </tr>
+      </tbody>
+    </table>
+</body>
+<!-- Bootstrap core JavaScript-->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<script src="site.all.js"></script> 
+<script type="text/javascript">
+  (()=>{
+    // to match styling of the table when full screen
+    let headerStyle = 'font-weight: 700; background-color: #ededed; color: #212529';
+
+    // basic table
+    let headers1 = ['First Name', 'Last Name', 'Email', 'Phone', 'Location', 'Department', 'Status'];
+    toResponsive('example1', headers1, headerStyle );
+
+    // apply responsive table to example2 with summation on columns 3 and 4
+    let headers2 = ['Date', 'Transaction Type', 'Amount', 'Fees'];
+    toResponsive('example2', headers2, headerStyle, {show: [3,4], hide: [1,2]} );
+
+    // apply responsive table to example3 with passing styling
+    let headers3 = ['Date', 'Transaction Type', 'Amount', {label:'Fees', css: 'color: red'} ];
+    toResponsive('example3', headers3, headerStyle, {show: [3,4], hide: [1,2]} );
+  })();
+</script>
+
+</html>
